@@ -32,6 +32,11 @@
     <services>
         <defaults public="true" />
 
+        <prototype namespace="JMS\SecurityExtraBundle\Command\"
+                   resource="../../Command/*">
+            <tag name="console.command"/>
+        </prototype>
+
         <service id="security.access.run_as_manager" class="%security.access.run_as_manager.class%" public="false">
             <argument>%security.run_as.key%</argument>
             <argument>%security.run_as.role_prefix%</argument>
