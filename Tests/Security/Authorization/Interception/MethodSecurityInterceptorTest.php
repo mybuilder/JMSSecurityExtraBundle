@@ -30,7 +30,7 @@ use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use JMS\SecurityExtraBundle\Security\Authorization\Interception\MethodSecurityInterceptor;
 use CG\Proxy\MethodInvocation;
 
-class MethodSecurityInterceptorTest extends \PHPUnit_Framework_TestCase
+class MethodSecurityInterceptorTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @expectedException Symfony\Component\Security\Core\Exception\AuthenticationCredentialsNotFoundException

@@ -4,7 +4,7 @@ namespace JMS\SecurityExtraBundle\Tests\Security\Authorization\Interception;
 
 use JMS\SecurityExtraBundle\Security\Authorization\Interception\SecurityPointcut;
 
-class SecurityPointcutTest extends \PHPUnit_Framework_TestCase
+class SecurityPointcutTest extends \PHPUnit\Framework\TestCase
 {
     private $metadataFactory;
 

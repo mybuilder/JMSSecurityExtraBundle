@@ -24,7 +24,7 @@ use Symfony\Component\Security\Acl\Exception\AclNotFoundException;
 use Symfony\Component\Security\Acl\Domain\ObjectIdentity;
 use JMS\SecurityExtraBundle\Security\Authorization\AfterInvocation\AclAfterInvocationProvider;
 
-class AclAfterInvocationProviderTest extends \PHPUnit_Framework_TestCase
+class AclAfterInvocationProviderTest extends \PHPUnit\Framework\TestCase
 {
     public function testDecideReturnsNullWhenObjectIsNull()
     {

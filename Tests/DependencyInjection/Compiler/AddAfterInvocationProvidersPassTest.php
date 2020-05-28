@@ -22,7 +22,7 @@ use Symfony\Component\DependencyInjection\Definition;
 use JMS\SecurityExtraBundle\DependencyInjection\Compiler\AddAfterInvocationProvidersPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
-class AddAfterInvocationProvidersPassTest extends \PHPUnit_Framework_TestCase
+class AddAfterInvocationProvidersPassTest extends \PHPUnit\Framework\TestCase
 {
     public function testProcessStopsWhenNoAfterInvocationManager()
     {

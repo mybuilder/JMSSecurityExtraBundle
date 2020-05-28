@@ -22,7 +22,7 @@ use JMS\SecurityExtraBundle\Security\Authentication\Token\RunAsUserToken;
 
 use JMS\SecurityExtraBundle\Security\Authentication\Provider\RunAsAuthenticationProvider;
 
-class RunAsAuthenticationProviderTest extends \PHPUnit_Framework_TestCase
+class RunAsAuthenticationProviderTest extends \PHPUnit\Framework\TestCase
 {
     public function testAuthenticateReturnsNullIfTokenISUnsupported()
     {

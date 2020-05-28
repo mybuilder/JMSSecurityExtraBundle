@@ -11,7 +11,7 @@ use Symfony\Component\Security\Acl\Domain\ObjectIdentity;
 use Symfony\Component\Security\Core\Authorization\Voter\VoterInterface;
 use JMS\SecurityExtraBundle\Security\Acl\Voter\AclVoter;
 
-class AclVoterTest extends \PHPUnit_Framework_TestCase
+class AclVoterTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @dataProvider getSupportsAttributeTests

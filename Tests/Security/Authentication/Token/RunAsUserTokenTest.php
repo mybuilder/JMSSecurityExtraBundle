@@ -23,7 +23,7 @@ use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
 use Symfony\Component\Security\Core\Role\Role;
 use JMS\SecurityExtraBundle\Security\Authentication\Token\RunAsUserToken;
 
-class RunAsUserTokenTest extends \PHPUnit_Framework_TestCase
+class RunAsUserTokenTest extends \PHPUnit\Framework\TestCase
 {
     public function testConstructor()
     {

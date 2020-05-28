@@ -20,7 +20,7 @@ namespace JMS\SecurityExtraBundle\Tests\Security\Authorization\AfterInvocation;
 
 use JMS\SecurityExtraBundle\Security\Authorization\AfterInvocation\AfterInvocationManager;
 
-class AfterInvocationManagerTest extends \PHPUnit_Framework_TestCase
+class AfterInvocationManagerTest extends \PHPUnit\Framework\TestCase
 {
     public function testDecide()
     {

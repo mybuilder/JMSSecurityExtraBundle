@@ -8,7 +8,7 @@ use Symfony\Component\Security\Acl\Exception\AclNotFoundException;
 
 use JMS\SecurityExtraBundle\Security\Acl\Expression\PermissionEvaluator;
 
-class PermissionEvaluatorTest extends \PHPUnit_Framework_TestCase
+class PermissionEvaluatorTest extends \PHPUnit\Framework\TestCase
 {
     private $token;
     private $object;

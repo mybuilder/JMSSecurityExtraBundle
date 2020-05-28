@@ -10,7 +10,7 @@ use Symfony\Component\Security\Core\Role\RoleInterface;
 use JMS\SecurityExtraBundle\Security\Authorization\Expression\ReverseInterpreter;
 use JMS\SecurityExtraBundle\Security\Authorization\Expression\ExpressionCompiler;
 
-class ReverseInterpreterTest extends \PHPUnit_Framework_TestCase
+class ReverseInterpreterTest extends \PHPUnit\Framework\TestCase
 {
     private $compiler;
     private $reverseInterpreter;

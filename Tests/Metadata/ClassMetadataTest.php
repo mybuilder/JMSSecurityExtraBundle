@@ -24,7 +24,7 @@ use JMS\SecurityExtraBundle\Metadata\Driver\AnnotationDriver;
 
 use Metadata\MetadataFactory;
 
-class ClassMetadataTest extends \PHPUnit_Framework_TestCase
+class ClassMetadataTest extends \PHPUnit\Framework\TestCase
 {
     /**
     * @expectedException \RuntimeException
