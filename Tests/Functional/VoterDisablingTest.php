@@ -2,6 +2,8 @@
 
 namespace JMS\SecurityExtraBundle\Tests\Functional;
 
+use Symfony\Component\HttpKernel\Kernel;
+
 class VoterDisablingTest extends BaseTestCase
 {
     /**
@@ -9,6 +11,10 @@ class VoterDisablingTest extends BaseTestCase
      */
     public function testDisableAllVoters()
     {
+        if (Kernel::MAJOR_VERSION >= 3) {
+            $this->markTestSkipped('Voter tests do not work on Symfony 3 and higher');
+        }
+
         $client = $this->createClient(array('config' => 'all_voters_disabled.yml'));
         $client->insulate();
 
@@ -23,6 +29,10 @@ class VoterDisablingTest extends BaseTestCase
      */
     public function testDefault()
     {
+        if (Kernel::MAJOR_VERSION >= 3) {
+            $this->markTestSkipped('Voter tests do not work on Symfony 3 and higher');
+        }
+
         $client = $this->createClient(array('config' => 'default.yml'));
         $client->insulate();
 
@@ -38,6 +48,10 @@ class VoterDisablingTest extends BaseTestCase
      */
     public function testSomeVotersDisabled()
     {
+        if (Kernel::MAJOR_VERSION >= 3) {
+            $this->markTestSkipped('Voter tests do not work on Symfony 3 and higher');
+        }
+
         $client = $this->createClient(array('config' => 'some_voters_disabled.yml'));
         $client->insulate();
 

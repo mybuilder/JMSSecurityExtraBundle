@@ -19,11 +19,8 @@ final class SecureRandomSchema extends Schema
         $table = $this->createTable($tableName);
         $table->addColumn('seed', 'string', array(
             'length'   => 88,
-            'not_null' => true,
         ));
-        $table->addColumn('updated_at', 'datetime', array(
-            'not_null' => true,
-        ));
+        $table->addColumn('updated_at', 'datetime');
     }
 
     public function addToSchema(Schema $schema)

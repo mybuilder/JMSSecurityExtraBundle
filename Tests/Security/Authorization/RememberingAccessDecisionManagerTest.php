@@ -26,7 +26,7 @@ class RememberingAccessDecisionManagerTest extends \PHPUnit\Framework\TestCase
     public function testSupportsAttribute()
     {
         if (!method_exists('Symfony\Component\Security\Core\Authorization\AccessDecisionManagerInterface', 'supportsClass')) {
-            return $this->markTestSkipped('Not available with sf 3.0.');
+            $this->markTestSkipped('Not available with sf 3.0.');
         }
 
         $this->delegate->expects($this->once())
@@ -39,8 +39,8 @@ class RememberingAccessDecisionManagerTest extends \PHPUnit\Framework\TestCase
 
     public function testSupportsClass()
     {
-        if(!method_exists('Symfony\Component\Security\Core\Authorization\AccessDecisionManagerInterface', 'supportsClass')) {
-            return $this->markTestSkipped('Not available with sf 3.0.');
+        if (!method_exists('Symfony\Component\Security\Core\Authorization\AccessDecisionManagerInterface', 'supportsClass')) {
+            $this->markTestSkipped('Not available with sf 3.0.');
         }
 
         $this->delegate->expects($this->once())
