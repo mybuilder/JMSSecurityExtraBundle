@@ -36,8 +36,13 @@ class AccessControlConfiguration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $tb = new TreeBuilder();
-        $rootNode = $tb->root('security');
+        if (\method_exists(TreeBuilder::class, 'getRootNode')) { // Symfony 4+
+            $tb = new TreeBuilder('security');
+            $rootNode = $tb->getRootNode();
+        } else { // Symfony 3-
+            $tb = new TreeBuilder();
+            $rootNode = $tb->root('security');
+        }
 
         $rootNode
             ->ignoreExtraKeys()
