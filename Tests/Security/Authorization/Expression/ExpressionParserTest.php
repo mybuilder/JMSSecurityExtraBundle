@@ -15,7 +15,7 @@ use JMS\SecurityExtraBundle\Security\Authorization\Expression\Ast\AndExpression;
 use JMS\SecurityExtraBundle\Security\Authorization\Expression\Ast\FunctionExpression;
 use JMS\SecurityExtraBundle\Security\Authorization\Expression\ExpressionParser;
 
-class ExpressionParserTest extends \PHPUnit_Framework_TestCase
+class ExpressionParserTest extends \PHPUnit\Framework\TestCase
 {
     private $parser;
 

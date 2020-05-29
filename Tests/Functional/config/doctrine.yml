@@ -1,4 +1,7 @@
 services:
+    _defaults:
+        public: true
+
     em: "@doctrine.orm.entity_manager"
 
 doctrine:

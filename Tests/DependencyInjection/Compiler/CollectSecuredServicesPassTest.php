@@ -22,7 +22,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 use JMS\SecurityExtraBundle\DependencyInjection\Compiler\CollectSecuredServicesPass;
 
-class CollectSecuredServicesPassTest extends \PHPUnit_Framework_TestCase
+class CollectSecuredServicesPassTest extends \PHPUnit\Framework\TestCase
 {
     public function testProcess()
     {

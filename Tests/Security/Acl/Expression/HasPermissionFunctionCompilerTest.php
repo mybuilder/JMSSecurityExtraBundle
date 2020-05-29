@@ -8,7 +8,7 @@ use JMS\SecurityExtraBundle\Security\Authorization\Expression\Ast\ConstantExpres
 use JMS\SecurityExtraBundle\Security\Authorization\Expression\Ast\FunctionExpression;
 use JMS\SecurityExtraBundle\Security\Authorization\Expression\ExpressionCompiler;
 
-class HasPermissionFunctionCompilerTest extends \PHPUnit_Framework_TestCase
+class HasPermissionFunctionCompilerTest extends \PHPUnit\Framework\TestCase
 {
     private $compiler;
 

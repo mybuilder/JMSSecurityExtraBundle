@@ -8,7 +8,7 @@ use JMS\SecurityExtraBundle\Security\Util\SecureRandomSchema;
 use Doctrine\DBAL\DriverManager;
 use JMS\SecurityExtraBundle\Security\Util\SecureRandom;
 
-class SecureRandomTest extends \PHPUnit_Framework_TestCase
+class SecureRandomTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * T1: Monobit test

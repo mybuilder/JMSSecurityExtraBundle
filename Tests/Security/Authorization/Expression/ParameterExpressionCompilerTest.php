@@ -23,7 +23,7 @@ use JMS\SecurityExtraBundle\Security\Authorization\Expression\Expression;
 use JMS\SecurityExtraBundle\Security\Authorization\Expression\Compiler\ParameterExpressionCompiler;
 use JMS\SecurityExtraBundle\Security\Authorization\Expression\ExpressionCompiler;
 
-class ParameterExpressionCompilerTest extends \PHPUnit_Framework_TestCase
+class ParameterExpressionCompilerTest extends \PHPUnit\Framework\TestCase
 {
     private $compiler;
 

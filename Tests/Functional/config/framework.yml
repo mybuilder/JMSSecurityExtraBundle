@@ -1,4 +1,7 @@
 services:
+    _defaults:
+        public: true
+
     logger:
         class: JMS\SecurityExtraBundle\Tests\Functional\TestBundle\Logger\FileLogger
         arguments: ["%kernel.cache_dir%"]

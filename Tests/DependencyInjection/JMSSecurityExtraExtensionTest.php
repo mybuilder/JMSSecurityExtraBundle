@@ -21,7 +21,7 @@ namespace JMS\SecurityExtraBundle\Tests\DependencyInjection;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use JMS\SecurityExtraBundle\DependencyInjection\JMSSecurityExtraExtension;
 
-class JMSSecurityExtraExtensionTest extends \PHPUnit_Framework_TestCase
+class JMSSecurityExtraExtensionTest extends \PHPUnit\Framework\TestCase
 {
     private $extension;
 

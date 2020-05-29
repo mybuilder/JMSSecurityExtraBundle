@@ -16,4 +16,8 @@
             <directory>./Tests</directory>
         </testsuite>
     </testsuites>
+
+    <php>
+        <env name="SYMFONY_DEPRECATIONS_HELPER" value="weak" /> <!-- weak OR max[direct]=2&amp;verbose=0 -->
+    </php>
 </phpunit>

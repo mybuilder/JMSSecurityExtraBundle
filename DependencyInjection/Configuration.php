@@ -25,9 +25,15 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder()
     {
-        $tb = new TreeBuilder();
-        $tb
-            ->root('jms_security_extra')
+        if (\method_exists(TreeBuilder::class, 'getRootNode')) { // Symfony 4+
+            $tb = new TreeBuilder('jms_security_extra');
+            $rootNode = $tb->getRootNode();
+        } else { // Symfony 3-
+            $tb = new TreeBuilder();
+            $rootNode = $tb->root('jms_security_extra');
+        }
+
+        $rootNode
                 ->validate()
                     ->always(function($v) {
                         if ($v['method_access_control'] && !$v['expressions']) {

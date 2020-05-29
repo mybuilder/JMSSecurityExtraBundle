@@ -16,7 +16,7 @@ use Symfony\Component\Security\Core\Role\Role;
 use JMS\SecurityExtraBundle\Security\Authorization\Expression\Expression;
 use JMS\SecurityExtraBundle\Security\Authorization\Expression\ExpressionCompiler;
 
-class ExpressionCompilerTest extends \PHPUnit_Framework_TestCase
+class ExpressionCompilerTest extends \PHPUnit\Framework\TestCase
 {
     private $compiler;
 

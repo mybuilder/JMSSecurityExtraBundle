@@ -11,7 +11,7 @@ use JMS\SecurityExtraBundle\Security\Authorization\Expression\Expression;
 use Symfony\Component\Filesystem\Filesystem;
 use JMS\SecurityExtraBundle\Security\Authorization\Expression\ExpressionVoter;
 
-class ExpressionVoterTest extends \PHPUnit_Framework_TestCase
+class ExpressionVoterTest extends \PHPUnit\Framework\TestCase
 {
     private $voter;
     private $cacheDir;
